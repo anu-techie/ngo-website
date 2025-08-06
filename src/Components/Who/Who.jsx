@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './who.css';
+import './Who.css';
 
 const Who = () => {
   return (
