@@ -1,0 +1,42 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding: 1rem;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #1e1e1e;
+    line-height: 1.6;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffd700; /* golden yellow */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e6c200; /* slightly darker gold on hover */
+}

@@ -1,0 +1,202 @@
+.about-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 90px 16px 64px;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  background: #fff;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #22223b;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.title-underline {
+  width: 80px;
+  height: 3px;
+  background: #284b63;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+.section-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 22px 0 40px 0;
+  flex-wrap: wrap;
+}
+
+.section-links span {
+  cursor: pointer;
+  padding: 7px 20px;
+  border-radius: 16px;
+  font-size: 1rem;
+  color: #284b63;
+  border: 1px solid transparent;
+  transition: background 0.16s, border 0.16s, color 0.16s;
+  font-weight: 500;
+}
+
+.section-links span:hover,
+.section-links span:focus {
+  background: #e7ecef;
+  color: #112d4e;
+  border: 1px solid #cacaca;
+}
+
+.about-zigzag {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 48px;
+  background: #fafdff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(40,75,99,0.09);
+  overflow: hidden;
+}
+
+.about-zigzag-heading, .about-zigzag-content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-zigzag-heading {
+  background: #284b63;
+  color: #fff;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  padding: 48px 40px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  min-width: 220px;
+  box-shadow: 0 4px 18px 0 rgba(40, 75, 99, 0.07);
+  overflow: hidden;
+}
+
+.about-zigzag-heading h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0,0,0,.03);
+  text-align: right;
+}
+
+.heading-accent {
+  width: 48px;
+  height: 5px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.6);
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.right-head {
+  flex-direction: row-reverse;
+}
+.right-head .about-zigzag-heading {
+  background: #3bc1c4;
+  color: #112d4e;
+  align-items: flex-start;
+  border-radius: 0 12px 12px 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.right-head .about-zigzag-heading h3 {
+  text-align: left;
+}
+.right-head .heading-accent {
+  background: rgba(0,0,0,0.13);
+  align-self: flex-start;
+}
+
+.about-zigzag-content {
+  background: #fff;
+  color: #222;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 36px 30px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-zigzag-content p {
+  font-size: 1.07rem;
+  line-height: 1.79;
+  color: #363636;
+  margin-bottom: 0;
+}
+
+.right-head .about-zigzag-content {
+  align-items: flex-end;
+}
+
+.about-zigzag-content .join-btn {
+  margin-top: 21px;
+  align-self: flex-start;
+  background: linear-gradient(90deg, #284b63 60%, #3bc1c4 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 34px;
+  border-radius: 30px;
+  font-size: 1.09rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(40, 75, 99, 0.12);
+  transition: background 0.15s, transform 0.13s;
+  text-decoration: none; /* Remove link underline */
+  display: inline-block;
+  max-width: fit-content;
+}
+
+.join-btn:hover {
+  background: linear-gradient(90deg, #1e303d 60%, #39adad 100%);
+  transform: translateY(-2px) scale(1.025);
+}
+
+@media (max-width: 900px) {
+  .about-zigzag, .right-head {
+    flex-direction: column !important;
+  }
+  .about-zigzag-heading, .about-zigzag-content {
+    padding: 22px 10px;
+    align-items: center !important;
+    text-align: center;
+    border-radius: 0;
+    min-width: unset;
+  }
+  .about-zigzag-heading h3 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .about-zigzag-content, .right-head .about-zigzag-content {
+    align-items: center;
+  }
+  .heading-accent, .right-head .heading-accent {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-zigzag-content .join-btn {
+    align-self: center !important;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 60px 2px 40px;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+}

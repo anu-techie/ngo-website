@@ -1,0 +1,111 @@
+.contact-container {
+  padding: 6rem 2rem 2rem;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+}
+
+.contact-left {
+  background-color: #e2e8f0;
+}
+
+.contact-left h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 1rem;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.success {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    padding: 1.5rem;
+  }
+}
